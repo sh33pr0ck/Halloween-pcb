@@ -579,4 +579,179 @@ Text Label 4550 4900 2    50   ~ 0
 WM_GND
 Text Label 4550 5450 2    50   ~ 0
 WM_GND
+$Comp
+L Driver_Motor:L293D U2
+U 1 1 5BB424E4
+P 5250 6600
+F 0 "U2" H 5250 7778 50  0000 C CNN
+F 1 "L293D" H 5250 7687 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 5500 5850 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/l293.pdf" H 4950 7300 50  0001 C CNN
+	1    5250 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 7100 4650 7250
+Wire Wire Line
+	5650 7100 5650 7250
+Wire Wire Line
+	6050 6700 6200 6700
+Wire Wire Line
+	6050 6800 6200 6800
+Wire Wire Line
+	6050 6500 6200 6500
+Wire Wire Line
+	6050 6400 6200 6400
+Wire Wire Line
+	5450 6100 5450 5950
+Wire Wire Line
+	5250 6100 5250 6000
+Wire Wire Line
+	4850 6100 4850 5950
+Wire Wire Line
+	4650 6100 4650 5900
+Wire Wire Line
+	4250 6500 4100 6500
+Wire Wire Line
+	4250 6700 4050 6700
+Text Label 4650 7250 3    50   ~ 0
+In1
+Text Label 4850 7250 3    50   ~ 0
+In2
+Text Label 5250 7250 3    50   ~ 0
+In3
+Text Label 5450 7250 3    50   ~ 0
+In4
+Text Label 4100 6500 2    50   ~ 0
+Vcc2
+Text Label 4650 5900 1    50   ~ 0
+Out1
+Text Label 4850 5950 1    50   ~ 0
+Out2
+Text Label 5250 6000 1    50   ~ 0
+Out3
+Text Label 5450 5950 1    50   ~ 0
+Out4
+Text Label 4950 7500 2    50   ~ 0
+GPIO18(GEN1)(PWM0)
+Wire Wire Line
+	5050 7500 4950 7500
+Wire Wire Line
+	5050 7100 5050 7500
+Wire Wire Line
+	4650 7250 4450 7250
+Wire Wire Line
+	4850 7350 4450 7350
+Wire Wire Line
+	4850 7100 4850 7350
+$Comp
+L power:GND #PWR?
+U 1 1 5BB995E0
+P 6200 6400
+F 0 "#PWR?" H 6200 6150 50  0001 C CNN
+F 1 "GND" H 6200 6250 50  0000 C CNN
+F 2 "" H 6200 6400 50  0000 C CNN
+F 3 "" H 6200 6400 50  0000 C CNN
+	1    6200 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BB99860
+P 6200 6500
+F 0 "#PWR?" H 6200 6250 50  0001 C CNN
+F 1 "GND" H 6200 6350 50  0000 C CNN
+F 2 "" H 6200 6500 50  0000 C CNN
+F 3 "" H 6200 6500 50  0000 C CNN
+	1    6200 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BB9988D
+P 6200 6700
+F 0 "#PWR?" H 6200 6450 50  0001 C CNN
+F 1 "GND" H 6200 6550 50  0000 C CNN
+F 2 "" H 6200 6700 50  0000 C CNN
+F 3 "" H 6200 6700 50  0000 C CNN
+	1    6200 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BB998BA
+P 6200 6800
+F 0 "#PWR?" H 6200 6550 50  0001 C CNN
+F 1 "GND" H 6200 6650 50  0000 C CNN
+F 2 "" H 6200 6800 50  0000 C CNN
+F 3 "" H 6200 6800 50  0000 C CNN
+	1    6200 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 5BB99B18
+P 6950 5900
+F 0 "J?" H 7030 5892 50  0000 L CNN
+F 1 "Conn_01x06" H 7030 5801 50  0000 L CNN
+F 2 "motion:HC-SR501" H 6950 5900 50  0001 C CNN
+F 3 "~" H 6950 5900 50  0001 C CNN
+	1    6950 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5700 6600 5700
+Wire Wire Line
+	6750 5900 6600 5900
+Wire Wire Line
+	6750 6000 6600 6000
+Wire Wire Line
+	6750 6100 6600 6100
+Wire Wire Line
+	6750 6200 6600 6200
+Text Label 6600 5700 2    50   ~ 0
+Vcc2
+$Comp
+L power:GND #PWR?
+U 1 1 5BBBC801
+P 6400 5800
+F 0 "#PWR?" H 6400 5550 50  0001 C CNN
+F 1 "GND" H 6400 5650 50  0000 C CNN
+F 2 "" H 6400 5800 50  0000 C CNN
+F 3 "" H 6400 5800 50  0000 C CNN
+	1    6400 5800
+	0    1    1    0   
+$EndComp
+Text Label 6600 5900 2    50   ~ 0
+Out1
+Text Label 6600 6000 2    50   ~ 0
+Out2
+Text Label 6600 6100 2    50   ~ 0
+Out3
+Text Label 6600 6200 2    50   ~ 0
+Out4
+Wire Wire Line
+	6400 5800 6750 5800
+Text Label 6200 7250 0    50   ~ 0
+GPIO13(PWM1)
+Wire Wire Line
+	5650 7250 6200 7250
+Wire Wire Line
+	5450 7350 5700 7350
+Wire Wire Line
+	5450 7100 5450 7350
+Text Label 4450 7250 2    50   ~ 0
+GPIO23(GEN4)
+Text Label 4450 7350 2    50   ~ 0
+GPIO24(GEN5)
+Text Label 5700 7350 0    50   ~ 0
+GPIO25(GEN6)
+Text Label 5700 7500 0    50   ~ 0
+GPIO22(GEN3)
+Wire Wire Line
+	5250 7500 5700 7500
+Wire Wire Line
+	5250 7100 5250 7500
+Text Label 4050 6700 2    50   ~ 0
+Vcc2
 $EndSCHEMATC
